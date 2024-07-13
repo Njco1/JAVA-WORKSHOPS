@@ -14,17 +14,17 @@ public class Ejercicio6 {
 
         String nombreBuscadoMinusculas = nombreBuscado.toLowerCase();
 
-        boolean encontrado = false;
+        boolean found = false;
 
         for (int i = 0; i < nombres.length; i++) {
             if (nombres[i].toLowerCase().equals(nombreBuscadoMinusculas)) {
                 System.out.println("Nombre encontrado en la posición: " + i);
-                encontrado = true;
+                found = true;
                 break;
             }
         }
 
-        if (!encontrado) {
+        if (!found) {
             System.out.println("El nombre no se encuentra en el array.");
         
 

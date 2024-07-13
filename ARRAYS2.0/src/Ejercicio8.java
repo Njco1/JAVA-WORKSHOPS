@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class Ejercicio7 {
+public class Ejercicio8 {
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
 
-
+        
         System.out.println("Sr usuario, cuantas columnas desea ingresar: ");
         int Columnas = scanner.nextInt();
         System.out.println("Sr usuario, cuantas filas desea ingresar: ");
@@ -29,21 +29,8 @@ public class Ejercicio7 {
             System.out.println();
         }
 
-        int [][] matrizTranspuesta = new int [Filas][Columnas];
-
-
-
-        for (int i = 0; i < Filas; i++) {
-            for (int j = 0; j < Columnas; j++) {
-                matrizTranspuesta[i][j]= matrizVacia[j][i];
-            }
-        }
-        
-        for (int i = 0; i < Filas; i++) {
-            for (int j = 0; j < Columnas; j++) {
-                System.out.print(matrizTranspuesta[i][j]+" ");
-            }
-            System.out.println();
+        if (Columnas == Filas) {
+            System.out.println("Es una matriz simetrica");
         }
 
         scanner.close();
