@@ -11,7 +11,7 @@ public class TallerDeMotosYCarros {
 
         System.out.print("Ingrese el número de trabajos a registrar: ");
         int numTrabajos = scanner.nextInt();
-        scanner.nextLine(); // Limpiar el buffer
+        scanner.nextLine();
 
         if (numTrabajos > maxEmployees) {
             System.out.println("El número de trabajos supera la capacidad máxima del taller.");
