@@ -91,6 +91,7 @@ public class TallerDeMotosYCarros {
             for (int j = 0; j < 2; j++) {
                 if (trabajos[i][j][0] != null && trabajos[i][j][0].equalsIgnoreCase(marcaBuscar) && trabajos[i][j][1].equalsIgnoreCase(modeloBuscar)) {
                     String tipo = (j == 0) ? "Moto" : "Carro";
+                    /*Aqui intente aplicar lo mismo que comente arriba, para que se viera un poco mas organizado */
                     System.out.printf("Vehículo encontrado: Tipo: %s, Marca: %s, Modelo: %s, Año: %s, Estado: %s\n", tipo, trabajos[i][j][0], trabajos[i][j][1], trabajos[i][j][2], trabajos[i][j][3]);
                     encontrado = true;
                 }
