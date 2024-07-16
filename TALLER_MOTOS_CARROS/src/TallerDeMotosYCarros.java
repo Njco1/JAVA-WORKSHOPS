@@ -14,8 +14,7 @@ public class TallerDeMotosYCarros {
         scanner.nextLine();
 
         if (numTrabajos > maxEmployees) {
-            System.out.println("El número de trabajos supera la capacidad máxima del taller.");
-            return;            
+            System.out.println("El número de trabajos supera la capacidad máxima del taller.");           
         }
 
         for (int i = 0; i < numTrabajos; i++) {
