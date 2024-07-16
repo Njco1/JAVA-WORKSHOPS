@@ -44,6 +44,10 @@ public class TallerDeMotosYCarros {
             trabajos[i][tipoIndex][3] = estado;
         }
 
+     /*La expresion "%-6s %-10s %-10s %-5s %-15s\n" no la entiendo bien, se que es para dar margenes y 
+    imprimir la informacion en una especie de lista pero la consulte para que se vea organizada la informacion */
+
+
         System.out.println("Vehiculos en el taller:");
         System.out.printf("%-6s %-10s %-10s %-5s %-15s\n", "Tipo", "Marca", "Modelo", "Año", "Estado");
         for (int i = 0; i < maxEmployees; i++) {
@@ -118,8 +122,7 @@ public class TallerDeMotosYCarros {
             System.out.println("Vehículo no encontrado.");
         }
 
-        /*La expresion "%-6s %-10s %-10s %-5s %-15s\n" no la entiendo bien pero la consulte para que se vea organizada la informacion */
-
+        
         System.out.println("Vehiculos en el taller:");
         System.out.printf("%-6s %-10s %-10s %-5s %-15s\n", "Tipo", "Marca", "Modelo", "Año", "Estado");
         for (int i = 0; i < maxEmployees; i++) {
